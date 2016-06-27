@@ -23,6 +23,17 @@
 </div>
 <div id="sidebar">
     <ul>
+        <li><!--  class="current" -->
+            <div class="small_title">论坛管理</div>
+            <ul class="child">
+<!--            basename($_SERVER['SCRIPT_NAME'])判断当前文件名,突出当前页面类别(蓝色/圆点)-->
+                <li><a <?php if(basename($_SERVER['SCRIPT_NAME']) == 'father_module.php'){echo "class='current'";} ?> href="father_module.php">父版块列表</a></li>
+                <li><a <?php if(basename($_SERVER['SCRIPT_NAME']) == 'father_module_add.php'){echo "class='current'";} ?> href="father_module_add.php">添加父版块</a></li>
+                <li><a <?php if(basename($_SERVER['SCRIPT_NAME']) == 'son_module.php'){echo "class='current'";} ?> href="son_module.php">子版块列表</a></li>
+                <li><a <?php if(basename($_SERVER['SCRIPT_NAME']) == 'son_module_add.php'){echo "class='current'";} ?> href="son_module_add.php">添加子版块</a></li>
+                <li><a <?php if(basename($_SERVER['SCRIPT_NAME']) == ''){echo "class='current'";} ?> href="#">帖子管理</a></li>
+            </ul>
+        </li>
         <li>
             <div class="small_title">系统</div>
             <ul class="child">
@@ -30,17 +41,6 @@
                 <li><a href="#">管理员</a></li>
                 <li><a href="#">添加管理员</a></li>
                 <li><a href="#">站点设置</a></li>
-            </ul>
-        </li>
-        <li><!--  class="current" -->
-            <div class="small_title">内容管理</div>
-            <ul class="child">
-<!--            basename($_SERVER['SCRIPT_NAME'])判断当前文件名,突出当前页面类别(蓝色/圆点)-->
-                <li><a <?php if(basename($_SERVER['SCRIPT_NAME']) == 'father_module.php'){echo "class='current'";} ?> href="father_module.php">父版块列表</a></li>
-                <li><a <?php if(basename($_SERVER['SCRIPT_NAME']) == 'father_module_add.php'){echo "class='current'";} ?> href="father_module_add.php">添加父版块</a></li>
-                <li><a <?php if(basename($_SERVER['SCRIPT_NAME']) == 'father_module.php'){echo "class='current'";} ?> href="#">子版块列表</a></li>
-                <li><a <?php if(basename($_SERVER['SCRIPT_NAME']) == 'father_module.php'){echo "class='current'";} ?> href="#">添加子版块</a></li>
-                <li><a <?php if(basename($_SERVER['SCRIPT_NAME']) == 'father_module.php'){echo "class='current'";} ?> href="#">帖子管理</a></li>
             </ul>
         </li>
         <li>

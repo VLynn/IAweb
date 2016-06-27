@@ -17,7 +17,7 @@ include 'inc/header.inc.php';
 
 <div id="main" >
     <div class="title">父版块列表</div>
-    <table class="list">
+    <table class="list" style="margin-top: 15px;padding-left: 7px;">
         <tr>
             <th>排序</th>
             <th>版块名称</th>

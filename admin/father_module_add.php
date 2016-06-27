@@ -22,6 +22,10 @@ if(isset($_POST['submit'])) {
         echo "<script>alert('版块名不得超过36个字符!')</script>";
         header("refresh:0;url='father_module_add.php'");
     }
+    else if(empty($_POST['info'])) {
+        echo "<script>alert('版块简介不得为空!')</script>";
+        header("refresh:0;url='father_module_add.php'");
+    }
     else if(!is_numeric($_POST['sort'])) {
         echo "<script>alert('排序不得为空或非数字字符!')</script>";
         header("refresh:0;url='father_module_add.php'");
@@ -35,7 +39,7 @@ if(isset($_POST['submit'])) {
         skip('father_module_add.php', 'error', '已有此版块, 请重试!');
     }
     //插入数据到数据库
-    $query = "insert into father_module(module_name, sort) values('{$_POST['module_name']}', {$_POST['sort']})";
+    $query = "insert into father_module(module_name, info, sort) values('{$_POST['module_name']}', '{$_POST['info']}', {$_POST['sort']})";
     query($link, $query);
     if(mysqli_affected_rows($link) == 1) {
         skip('father_module.php', 'ok', '添加成功!');
@@ -58,6 +62,13 @@ include 'inc/header.inc.php';
                 <td><input name="module_name" type="text" /></td>
                 <td>
                     版块名称不得为空, 最多不得超过36个字符
+                </td>
+            </tr>
+            <tr>
+                <td>版块简介</td>
+                <td><textarea name="info"></textarea></td>
+                <td>
+                    请输入父版块的简介信息, 版块简介不得多于255个字符
                 </td>
             </tr>
             <tr>
