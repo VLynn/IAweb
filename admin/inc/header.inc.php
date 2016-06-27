@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <link rel="icon" href="http://v3.bootcss.com/favicon.ico">
-    <title>IA智慧农业-后台</title>
+    <title><?php echo $info['title']?></title>
     <meta name="keywords" content="智慧农业后台" />
     <meta name="description" content="智慧农业后台" />
     <link rel="stylesheet" type="text/css" href="style/admin_public.css" />
@@ -35,11 +35,12 @@
         <li><!--  class="current" -->
             <div class="small_title">内容管理</div>
             <ul class="child">
-                <li><a class="current" href="#">父板块列表</a></li>
-                <li><a href="#">添加父板块</a></li>
-                <li><a href="#">子板块列表</a></li>
-                <li><a href="#">添加子板块</a></li>
-                <li><a href="#">帖子管理</a></li>
+<!--            basename($_SERVER['SCRIPT_NAME'])判断当前文件名,突出当前页面类别(蓝色/圆点)-->
+                <li><a <?php if(basename($_SERVER['SCRIPT_NAME']) == 'father_module.php'){echo "class='current'";} ?> href="father_module.php">父版块列表</a></li>
+                <li><a <?php if(basename($_SERVER['SCRIPT_NAME']) == 'father_module_add.php'){echo "class='current'";} ?> href="father_module_add.php">添加父版块</a></li>
+                <li><a <?php if(basename($_SERVER['SCRIPT_NAME']) == 'father_module.php'){echo "class='current'";} ?> href="#">子版块列表</a></li>
+                <li><a <?php if(basename($_SERVER['SCRIPT_NAME']) == 'father_module.php'){echo "class='current'";} ?> href="#">添加子版块</a></li>
+                <li><a <?php if(basename($_SERVER['SCRIPT_NAME']) == 'father_module.php'){echo "class='current'";} ?> href="#">帖子管理</a></li>
             </ul>
         </li>
         <li>

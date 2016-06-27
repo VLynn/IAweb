@@ -24,4 +24,5 @@ $html = <<<A
     </html>
 A;
 echo $html;
+exit();
 }
