@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="788c4baa-295b-4ee9-8727-d963d08b329f" name="IAweb2" url="http://115.159.124.196">
+        <fileTransfer host="115.159.124.196" port="22" privateKey="$USER_HOME$/.ssh/id_rsa" rootFolder="/usr/local/nginx/html" accessType="SFTP" username="root" keyPair="true">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
