@@ -80,8 +80,9 @@ body {
 }
 #sidebar ul li div.small_title {
 	color:#333;
-	padding:4px 0 4px 15px;
+	padding:4px 0 4px 28px;
 	background:#ddd;
+    font-weight: bold;
 }
 #sidebar ul.child {
 	margin:3px 0 3px 0;
@@ -89,15 +90,17 @@ body {
 #sidebar ul li a {
 	color:#333;
 	display:block;
-	padding:4px 0 4px 28px;
-	background:url(admin_bg.png) -265px 9px no-repeat;
+	padding:6px 0 6px 28px;
+	/*background:url(admin_bg.png) -265px 9px no-repeat;*/
 }
 #sidebar ul li a:hover {
 	text-decoration:none;
 	background:url(admin_bg.png) -265px 9px no-repeat #e9e9e9;
 }
 #sidebar ul li a.current {
-	background:url(admin_bg.png) -265px -11px no-repeat;
+	/*background:url(admin_bg.png) -265px -11px no-repeat;*/
+    color: #fff;
+    background-color: #428bca;
 }
 #main {
 	width:90%;

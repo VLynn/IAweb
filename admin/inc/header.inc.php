@@ -35,12 +35,12 @@
             </ul>
         </li>
         <li>
-            <div class="small_title">系统</div>
+            <div class="small_title">系统管理</div>
             <ul class="child">
-                <li><a class="current" href="#">系统信息</a></li>
-                <li><a href="#">管理员</a></li>
-                <li><a href="#">添加管理员</a></li>
-                <li><a href="#">站点设置</a></li>
+                <li><a <?php if(basename($_SERVER['SCRIPT_NAME']) == 'farmer_info.php'){echo "class='current'";} ?> href="farmer_info.php">农户信息</a></li>
+                <li><a <?php if(basename($_SERVER['SCRIPT_NAME']) == 'greenhouse_info.php'){echo "class='current'";} ?> href="greenhouse_info.php">大棚信息</a></li>
+                <li><a <?php if(basename($_SERVER['SCRIPT_NAME']) == 'sensor_info.php'){echo "class='current'";} ?> href="sensor_info.php">温湿度信息</a></li>
+                <li><a <?php if(basename($_SERVER['SCRIPT_NAME']) == 'controll_info.php'){echo "class='current'";} ?> href="controll_info.php">温湿度控制</a></li>
             </ul>
         </li>
         <li>
