@@ -82,7 +82,7 @@ include 'inc/header.inc.php';
                         </a>
                     </div>
                     <div class="subject">
-                        <div class="titleWrap"><h2><a href="#"><?php echo $data_content['title']?></a></h2></div>
+                        <div class="titleWrap"><h2><a href="show.php?id=<?php echo $data_content['id']?>" target="_blank"><?php echo $data_content['title']?></a></h2></div>
                         <p>
                             楼主：<?php echo $data_content['name']?>&nbsp;<?php echo $data_content['date']?>&nbsp;&nbsp;&nbsp;&nbsp;最后回复：2014-12-08
                         </p>
