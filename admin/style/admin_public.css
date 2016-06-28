@@ -114,6 +114,7 @@ body {
 	background:#e6e6e6;
 	color:#666;
 	font-weight:bold;
+    font-size: 18px;
 }
 #main .explain {
 	color:#000;
@@ -148,6 +149,9 @@ input.btn {
     text-align: center;
     background:url(btn.png) 0 -120px #1b75b6;
     border:0px;
+}
+table.list {
+    width: 81%;
 }
 table.list tr {
 	height:50px;
