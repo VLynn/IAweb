@@ -42,6 +42,10 @@ ul{
 	border-bottom: 4px dashed #555;
 	width: 100%;
 }
+.titles a{
+	color: #222;
+	cursor: pointer;
+}
 .titles-white{
 	color: #f4f4f4;
 }
@@ -91,7 +95,7 @@ input:-ms-input-placeholder {
     margin:auto;
 }
 #header .logo {
-    width:100px;
+    width:140px;
     font-size:20px;
     font-family:微软雅黑;
     font-weight:bold;
@@ -110,6 +114,9 @@ input:-ms-input-placeholder {
 }
 #header .navi a.hover {
     background:#08C;
+}
+#header .navi a:hover {
+	text-decoration: underline;
 }
 #header .serarch {
     background: none repeat scroll 0 0 #f2f2f2;
@@ -147,10 +154,13 @@ input:-ms-input-placeholder {
 }
 #header .login {
     float:right;
-    width:70px;
+    /*width:70px;*/
 }
 #header .login a {
     color:#fff;
+}
+#header .login a:hover{
+	text-decoration: underline;
 }
 #head-section{
 

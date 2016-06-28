@@ -80,7 +80,7 @@ function execute_multi($link,$arr_sqls,&$error){
 
 //获取记录数
 function num($link,$sql_count){
-    $result=execute($link,$sql_count);
+    $result=query($link,$sql_count);
     $count=mysqli_fetch_row($result);
     return $count[0];
 }

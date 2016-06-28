@@ -78,9 +78,10 @@
 }
 
 #main #right .classList .title {
+	font-size: 19px;
 	width:260px;
 	margin:0 auto;
-	padding:7px 0;
+	padding:7px 9px;
 	font-weight:bold;
 	color:#666;
 	text-indent:10px;
@@ -91,6 +92,8 @@
 	margin:15px auto 0 auto;
 }
 #main #right .classList ul.listWrap li h2 a {
+	font-size: 18px;
+	font-weight: bold;
 	color:#333;
 	font-weight:normal;
 }

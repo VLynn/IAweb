@@ -1,9 +1,18 @@
+<?php
+include_once 'inc/config.inc.php';
+include_once  'inc/mysql.inc.php';
+include 'admin/inc/tool.inc.php';
+
+$link = connect();
+$member_id=is_login($link);
+?>
+
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
     <link rel="icon" href="http://v3.bootcss.com/favicon.ico">
     <!--Page Title-->
-    <title>IA智慧农业</title>
+    <title>[论坛]智慧农业</title>
     <!--Meta Tags-->
     <meta charset="utf-8" />
     <meta name="keywords" content="" />
@@ -21,7 +30,7 @@
 <body>
     <div class="header_wrap">
         <div id="header" class="auto">
-            <div class="logo">IA智慧农业</div>
+            <div class="logo">[论坛]智慧农业</div>
             <div class="navi">
                 <a class="hover">首页</a>
             </div>
@@ -32,8 +41,22 @@
                 </form>
             </div>
             <div class="login">
-                <a>登录</a>&nbsp;
-                <a>注册</a>
+                <?php
+                if($member_id) {
+                    $str = <<<A
+                <a>您好！{$_COOKIE['name']}</a>
+                <span style="color:#fff;">|</span> <a href="logout.php">退出</a>
+A;
+                    echo $str;
+                }
+                else {
+                    $str = <<<A
+				<a href="login.php">登录</a>&nbsp;
+				<a>注册</a>
+A;
+                    echo $str;
+                }
+                ?>
             </div>
         </div>
     </div>
@@ -149,29 +172,57 @@
     <!-- Services-section -->
     <div id="services">
         <div class="container">
-            <h3 class="titles">技术交流</h3>
+            <h3 class="titles"><a>技术交流</a></h3>
             <p class="desc">各种养殖技术、种植技术、市场信息、疾病防治、疑难问题等交流专区！</p>
             <ul class="services">
-                <li>
+                <?php
+                //目前father_module_id=6是写死的,以后需要列出所有的父版块
+                $query_son = "select * from son_module where father_module_id=6";
+                $result_son = query($link, $query_son);
+                if(mysqli_num_rows($result_son)) {
+                    $count = 1;
+                    while($data_son = mysqli_fetch_assoc($result_son)) {
+                        $query_today = "select count(*) from posts where son_module_id = {$data_son['id']} and date > CURDATE()";
+                        $count_today = num($link, $query_today);
+                        $query_total = "select count(*) from posts where son_module_id = {$data_son['id']}";
+                        $count_total = num($link, $query_total);
+                        if(count/2) {
+                            echo "<li>";
+                        }
+                        else {
+                            echo "<li class='right-side'>";
+                        }
+$html = <<<A
                     <div class="service-img"><img src="img/front/new.gif" alt="icon" /></div>
-                    <h3><a href="#">种植技术</a><span>(今日36)</span></h3>
-                    <p>帖子:3862</p>
+                    <h3><a href="list_son.php?id={$data_son['id']}">{$data_son['module_name']}</a><span>(今日$count_today)</span></h3>
+                    <p>帖子:$count_total</p>
                 </li>
-                <li class="right-side">
-                    <div class="service-img"><img src="img/front/old.gif" alt="icon" /></div>
-                    <h3><a href="#">大棚环境</a><span>(今日36)</span></h3>
-                    <p>帖子:3862</p>
-                </li>
-                <li>
-                    <div class="service-img"><img src="img/front/lock.gif" alt="icon" /></div>
-                    <h3><a href="#">疾病防治</a><span>(今日36)</span></h3>
-                    <p>帖子:3862</p>
-                </li>
-                <li class="right-side">
-                    <div class="service-img"><img src="img/front/new.gif" alt="icon" /></div>
-                    <h3><a href="#">疑难问题</a><span>(今日36)</span></h3>
-                    <p>帖子:3862</p>
-                </li>
+A;
+                        echo $html;
+                        $count++;
+                    }
+                }
+                ?>
+<!--                <li>-->
+<!--                    <div class="service-img"><img src="img/front/new.gif" alt="icon" /></div>-->
+<!--                    <h3><a href="#">种植技术</a><span>(今日36)</span></h3>-->
+<!--                    <p>帖子:3862</p>-->
+<!--                </li>-->
+<!--                <li class="right-side">-->
+<!--                    <div class="service-img"><img src="img/front/old.gif" alt="icon" /></div>-->
+<!--                    <h3><a href="#">大棚环境</a><span>(今日36)</span></h3>-->
+<!--                    <p>帖子:3862</p>-->
+<!--                </li>-->
+<!--                <li>-->
+<!--                    <div class="service-img"><img src="img/front/lock.gif" alt="icon" /></div>-->
+<!--                    <h3><a href="#">疾病防治</a><span>(今日36)</span></h3>-->
+<!--                    <p>帖子:3862</p>-->
+<!--                </li>-->
+<!--                <li class="right-side">-->
+<!--                    <div class="service-img"><img src="img/front/new.gif" alt="icon" /></div>-->
+<!--                    <h3><a href="#">疑难问题</a><span>(今日36)</span></h3>-->
+<!--                    <p>帖子:3862</p>-->
+<!--                </li>-->
             </ul>
         </div>
     </div>
