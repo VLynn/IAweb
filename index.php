@@ -11,12 +11,12 @@
     <!-- Set Viewport-->
     <meta name="viewport" content="user-scalable=no,initial-scale=1.0, maximum-scale=1.0 width=device-width" />
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-    <link rel="stylesheet" href="../css/bootstrap.min.css" type="text/css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="../css/jquery.fancybox-1.3.4.css" />
-    <link rel="stylesheet" href="../css/flexslider.css" type="text/css" media="screen" />
-    <link rel="stylesheet" href="../css/style.css" type="text/css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="css/jquery.fancybox-1.3.4.css" />
+    <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
     <!--Fav and touch icons-->
-    <link rel="apple-touch-icon" href="../img/favicons/apple-touch-icon.png">
+    <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
 </head>
 <body>
     <div class="header_wrap">
@@ -91,48 +91,48 @@
 
             <ul class="ourHolder">
                 <li class="gallery-item" data-id="id-1" data-type="wordpress">
-                    <img class="gallery-img" src="../img/gallery/1.jpg" alt="img" />
-                    <a class="fancybox" href="../img/gallery/fs.jpg"><div class="overlay-works">
+                    <img class="gallery-img" src="img/gallery/1.jpg" alt="img" />
+                    <a class="fancybox" href="img/gallery/fs.jpg"><div class="overlay-works">
                         </div></a>
                 </li>
                 <li class="gallery-item" data-id="id-2" data-type="Photography">
-                    <img class="gallery-img" src="../img/gallery/2.jpg" alt="img" />
-                    <a class="fancybox" href="../img/gallery/fs.jpg"><div class="overlay-works">
+                    <img class="gallery-img" src="img/gallery/2.jpg" alt="img" />
+                    <a class="fancybox" href="img/gallery/fs.jpg"><div class="overlay-works">
                         </div></a>
                 </li>
                 <li class="gallery-item" data-id="id-3" data-type="video">
-                    <img class="gallery-img" src="../img/gallery/3.jpg" alt="img" />
-                    <a class="fancybox" href="../img/gallery/fs.jpg"><div class="overlay-works">
+                    <img class="gallery-img" src="img/gallery/3.jpg" alt="img" />
+                    <a class="fancybox" href="img/gallery/fs.jpg"><div class="overlay-works">
                         </div></a>
                 </li>
                 <li class="gallery-item" data-id="id-4" data-type="graphicdesign">
-                    <img class="gallery-img" src="../img/gallery/4.jpg" alt="img" />
-                    <a class="fancybox" href="../img/gallery/fs.jpg"><div class="overlay-works">
+                    <img class="gallery-img" src="img/gallery/4.jpg" alt="img" />
+                    <a class="fancybox" href="img/gallery/fs.jpg"><div class="overlay-works">
                         </div></a>
                 </li>
                 <li class="gallery-item" data-id="id-5" data-type="graphicdesign">
-                    <img class="gallery-img" src="../img/gallery/5.jpg" alt="img" />
-                    <a class="fancybox" href="../img/gallery/fs.jpg"><div class="overlay-works">
+                    <img class="gallery-img" src="img/gallery/5.jpg" alt="img" />
+                    <a class="fancybox" href="img/gallery/fs.jpg"><div class="overlay-works">
                         </div></a>
                 </li>
                 <li class="gallery-item" data-id="id-6" data-type="Photography">
-                    <img class="gallery-img" src="../img/gallery/6.jpg" alt="img" />
-                    <a class="fancybox" href="../img/gallery/fs.jpg"><div class="overlay-works">
+                    <img class="gallery-img" src="img/gallery/6.jpg" alt="img" />
+                    <a class="fancybox" href="img/gallery/fs.jpg"><div class="overlay-works">
                         </div></a>
                 </li>
                 <li class="gallery-item" data-id="id-7" data-type="video">
-                    <img class="gallery-img" src="../img/gallery/7.jpg" alt="img" />
-                    <a class="fancybox" href="../img/gallery/fs.jpg"><div class="overlay-works">
+                    <img class="gallery-img" src="img/gallery/7.jpg" alt="img" />
+                    <a class="fancybox" href="img/gallery/fs.jpg"><div class="overlay-works">
                         </div></a>
                 </li>
                 <li class="gallery-item" data-id="id-8" data-type="wordpress">
-                    <img class="gallery-img" src="../img/gallery/8.jpg" alt="img" />
-                    <a class="fancybox" href="../img/gallery/fs.jpg"><div class="overlay-works">
+                    <img class="gallery-img" src="img/gallery/8.jpg" alt="img" />
+                    <a class="fancybox" href="img/gallery/fs.jpg"><div class="overlay-works">
                         </div></a>
                 </li>
                 <li class="gallery-item" data-id="id-9" data-type="Photography">
-                    <img class="gallery-img" src="../img/gallery/9.jpg" alt="img" />
-                    <a class="fancybox" href="../img/gallery/fs.jpg"><div class="overlay-works">
+                    <img class="gallery-img" src="img/gallery/9.jpg" alt="img" />
+                    <a class="fancybox" href="img/gallery/fs.jpg"><div class="overlay-works">
                         </div></a>
                 </li>
             </ul>
@@ -153,22 +153,22 @@
             <p class="desc">各种养殖技术、种植技术、市场信息、疾病防治、疑难问题等交流专区！</p>
             <ul class="services">
                 <li>
-                    <div class="service-img"><img src="../img/front/new.gif" alt="icon" /></div>
+                    <div class="service-img"><img src="img/front/new.gif" alt="icon" /></div>
                     <h3><a href="#">种植技术</a><span>(今日36)</span></h3>
                     <p>帖子:3862</p>
                 </li>
                 <li class="right-side">
-                    <div class="service-img"><img src="../img/front/old.gif" alt="icon" /></div>
+                    <div class="service-img"><img src="img/front/old.gif" alt="icon" /></div>
                     <h3><a href="#">大棚环境</a><span>(今日36)</span></h3>
                     <p>帖子:3862</p>
                 </li>
                 <li>
-                    <div class="service-img"><img src="../img/front/lock.gif" alt="icon" /></div>
+                    <div class="service-img"><img src="img/front/lock.gif" alt="icon" /></div>
                     <h3><a href="#">疾病防治</a><span>(今日36)</span></h3>
                     <p>帖子:3862</p>
                 </li>
                 <li class="right-side">
-                    <div class="service-img"><img src="../img/front/new.gif" alt="icon" /></div>
+                    <div class="service-img"><img src="img/front/new.gif" alt="icon" /></div>
                     <h3><a href="#">疑难问题</a><span>(今日36)</span></h3>
                     <p>帖子:3862</p>
                 </li>
@@ -183,7 +183,7 @@
             <p id="about-desc">Here are the three world famous farmer who are using our system. You can search their information online or contact with them with on our webpage.</p>
             <ul>
                 <li>
-                    <img src="../img/about/a1.jpg" alt="staff" />
+                    <img src="img/about/a1.jpg" alt="staff" />
                     <h3>Han Doe</h3>
                     <h6>Guangxi Liuzhou</h6>
                     <div class="social-staff">
@@ -195,7 +195,7 @@
                     </div>
                 </li>
                 <li>
-                    <img src="../img/about/a2.jpg" alt="staff" />
+                    <img src="img/about/a2.jpg" alt="staff" />
                     <h3>Feng Chou</h3>
                     <h6>Hunan Zhuzhou</h6>
                     <div class="social-staff">
@@ -207,7 +207,7 @@
                     </div>
                 </li>
                 <li class="right-side">
-                    <img src="../img/about/a3.jpg" alt="staff" />
+                    <img src="img/about/a3.jpg" alt="staff" />
                     <h3>QingFeng Liu</h3>
                     <h6>Ningxia Wuwei</h6>
                     <div class="social-staff">
@@ -268,18 +268,18 @@
 
     <!-- /Footer-section -->
     <!-- Javascript -->
-    <script type="text/javascript" src="../js/jquery-1.8.2.min.js"></script>
-    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="../js/tinynav.min.js"></script>
-    <script type="text/javascript" src="../js/jquery.sticky.js"></script>
-    <script type="text/javascript" src="../js/jquery.flexslider-min.js"></script>
-    <script type="text/javascript" src="../js/jquery.animate.js"></script>
-    <script type="text/javascript" src="../js/jquery.anchorScroll.js"></script>
-    <script type='text/javascript' src='../js/jquery.easing.1.3.js'></script>
-    <script type="text/javascript" src="../js/jquery.quicksand.js"></script>
-    <script type="text/javascript" src="../js/jquery.fancybox.js"></script>
-    <script type="text/javascript" src="../js/ajax-actions.js"></script>
-    <script type="text/javascript" src="../js/custom.js"></script>
+    <script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/tinynav.min.js"></script>
+    <script type="text/javascript" src="js/jquery.sticky.js"></script>
+    <script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
+    <script type="text/javascript" src="js/jquery.animate.js"></script>
+    <script type="text/javascript" src="js/jquery.anchorScroll.js"></script>
+    <script type='text/javascript' src='js/jquery.easing.1.3.js'></script>
+    <script type="text/javascript" src="js/jquery.quicksand.js"></script>
+    <script type="text/javascript" src="js/jquery.fancybox.js"></script>
+    <script type="text/javascript" src="js/ajax-actions.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
     </body>
 </html>
 

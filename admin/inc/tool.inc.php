@@ -6,6 +6,7 @@
  * Time: 上午9:38
  */
 
+//页面跳转函数
 function skip($url, $pic, $message) {
 $html = <<<A
     <!DOCTYPE html>
@@ -26,3 +27,20 @@ A;
 echo $html;
 exit();
 }
+
+//检查是否登录函数
+function is_login($link){
+    if(isset($_COOKIE['name']) && isset($_COOKIE['pw'])){
+        $query="select * from member where username='{$_COOKIE['name']}'";
+        $result=query($link,$query);
+        if(mysqli_num_rows($result)==1){
+            $data=mysqli_fetch_assoc($result);
+            return $data['id'];
+        }else{
+            return false;
+        }
+    }else{
+        return false;
+    }
+}
+?>
