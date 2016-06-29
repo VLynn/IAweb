@@ -56,7 +56,7 @@ include 'inc/header.inc.php';
                 <a class="btn publish" href="publish.php?son_module_id=<?php echo $_GET['id']?>" target="_blank"></a>
                 <div class="pages">
                     <?php
-                    $page=page($count_all,5);
+                    $page=page($count_all,12);
                     echo $page['html'];
                     ?>
                 </div>
@@ -74,6 +74,8 @@ include 'inc/header.inc.php';
 			{$page['limit']}";
             $result_content=query($link,$query);
             while($data_content=mysqli_fetch_assoc($result_content)){
+                $query = "select count(*) from reply where post_id={$data_content['id']}";
+                $count_reply = num($link, $query);
                 ?>
                 <li>
                     <div class="smallPic">
@@ -89,7 +91,7 @@ include 'inc/header.inc.php';
                     </div>
                     <div class="count">
                         <p>
-                            回复<br /><span>41</span>
+                            回复<br /><span><?php echo $count_reply?></span>
                         </p>
                         <p>
                             浏览<br /><span><?php echo $data_content['times']?></span>

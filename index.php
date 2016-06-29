@@ -52,7 +52,7 @@ A;
                 else {
                     $str = <<<A
 				<a href="login.php">登录</a>&nbsp;
-				<a>注册</a>
+				<a href="register.php">注册</a>
 A;
                     echo $str;
                 }
@@ -66,34 +66,37 @@ A;
     <div id="news" class="news">
         <div class="container">
             <h3 class="titles">农业快讯</h3>
-            <p id="news-desc">做好中国农业与国际农业接轨，了解世界农业高科技发展趋势.
-                做好中国农业与国际农业接轨，了解世界农业高科技发展趋势.
-                做好中国农业与国际农业接轨，了解世界农业高科技发展趋势.
+            <p id="news-desc">做好中国农业与国际农业接轨，了解世界农业高科技发展趋势
             </p>
             <ul>
                 <li>
-                    <h4><a href="#">了解世界农业高科技发展趋势...</a></h4>
-                    <p class="meta">2013-3-29</p>
-                    <p>山东樱桃大量上市致市场价格回落近半.除了水果销售商，普通消费者也更愿意购买价格实惠的山东樱桃。
-                        水果摊贩郑勇告诉记者，山东樱桃上市后，前来购买的人比以前多了许多。</p>
+                    <h4><a href="#">2016年第一届深圳绿博会农业科技创新创业大赛火热开启!</a></h4>
+                    <p class="meta">2016-6-25</p>
+                    <p>“2016年第一届绿博会农业科技创新创业”大赛已经开始接受报名，这次大赛主要是面向“农业科技类创新”的创业项目，
+                        反对针对农业领域进行创新的海内外科技创业人员（专利技术、科技成果持有者）、高校科研创业团队所拥有的科技项目均可报名参赛。
+                    </p>
                 </li>
                 <li class="right-side">
-                    <h4><a href="#">了解世界农业高科技发展趋势...</a></h4>
-                    <p class="meta">2013-3-29</p>
-                    <p>山东樱桃大量上市致市场价格回落近半.除了水果销售商，普通消费者也更愿意购买价格实惠的山东樱桃。
-                        水果摊贩郑勇告诉记者，山东樱桃上市后，前来购买的人比以前多了许多。</p>
+                    <h4><a href="#">16年6月23日德州辣椒价格</a></h4>
+                    <p class="meta">2016-6-23</p>
+                    <p>冷库货：<br>
+                    　　　　三樱椒：5.70-5.80元/斤（9成以上精品）。<br>
+                    　　　　红太阳：6.20-6.30元/斤（统货）。<br>
+                    　　　　花　皮（一般）：1.30-1.40元/斤。<br>
+                    　　　　冷冻北京红：3500元/吨（出成率24-25）。</p>
                 </li>
                 <li>
-                    <h4><a href="#">了解世界农业高科技发展趋势...</a></h4>
-                    <p class="meta">2013-3-29</p>
-                    <p>山东樱桃大量上市致市场价格回落近半.除了水果销售商，普通消费者也更愿意购买价格实惠的山东樱桃。
-                        水果摊贩郑勇告诉记者，山东樱桃上市后，前来购买的人比以前多了许多。</p>
+                    <h4><a href="#">作为农产品电商的一员，南北干货家们遇到了什么问题</a></h4>
+                    <p class="meta">2016-6-29</p>
+                    <p>前不久的广东“徐闻县菠萝事件”让不少人对现如今的农产品电商平台一通诟病.<br>一些优质南北干货货源原产地的农民朋友还是固守一手交钱一手交货的交易模式，完全抵触线上交易，
+                        因为不了解线上的运作过程，生怕自己吃亏而盲目拒绝。</p>
                 </li>
                 <li class="right-side">
-                    <h4><a href="#">了解世界农业高科技发展趋势...</a></h4>
-                    <p class="meta">2013-3-29</p>
-                    <p>山东樱桃大量上市致市场价格回落近半.除了水果销售商，普通消费者也更愿意购买价格实惠的山东樱桃。
-                        水果摊贩郑勇告诉记者，山东樱桃上市后，前来购买的人比以前多了许多。</p>
+                    <h4><a href="#">锡山应季采蓝莓 首选智慧恬园</a></h4>
+                    <p class="meta">2016-6-16</p>
+                    <p>智慧恬园的蓝莓有个好听的名字——蓝度，释意蓝莓种植纯生态有标准，最注重品质与健康！<br>说它是纯生态蓝莓，是因为蓝莓在种植过程中全程采用有机肥，
+                        没有使用任何农药，全部采用人工除草，可以直接采了吃。<br>走进恬园农场，就可以看到一颗颗结实的紫蓝珠挂在枝头，
+                        饱满硬实、甚是诱人，摘下三两粒入口轻嚼，果浆丰富、酸甜可口。</p>
                 </li>
             </ul>
         </div>
@@ -103,13 +106,13 @@ A;
     <div id="works" class="works-wrapper">
         <div class="container">
             <h3 class="titles titles-white-c">供应求购</h3>
-            <p id="works-desc">Morbi in sem in metus facilisis adipiscing eget nec leo. Fusce sodales felis dolor. Nam varius enim non odio consectetur eget posuere neque dignissim. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+            <p id="works-desc">暂无子版块...</p>
             <ul id="filterOptions">
-                <li class="active"><a href="#" class="all">All</a></li>
-                <li><a href="#" class="Photography">Photography</a></li>
-                <li><a href="#" class="graphicdesign">Graphic Design</a></li>
-                <li><a href="#" class="video">Video</a></li>
-                <li><a href="#" class="wordpress">Wordpress</a></li>
+                <li class="active"><a href="#" class="all"> 总 览 </a></li>
+                <li><a href="###" class="Photography."> 图 集 </a></li>
+                <li><a href="###" class="graphicdesign."> 设 计 </a></li>
+                <li><a href="###" class="video."> 视 频 </a></li>
+                <li><a href="###" class="wordpress."> 播 客 </a></li>
             </ul>
 
             <ul class="ourHolder">
@@ -165,7 +168,8 @@ A;
     <!-- Quote-section -->
     <div class="quote">
         <div class="container">
-            <h3>Economists measure the total factor productivity of agriculture and by this measure agriculture in the United States is roughly 1.7 times more productive than it was in 1948.</h3>
+            <h3>经济学家衡量了农业生产率的全部要素,通过这一措施
+                美国的农业生产率达到1948年的1.7倍。</h3>
         </div>
     </div>
     <!-- /Quote-section -->
@@ -203,26 +207,6 @@ A;
                     }
                 }
                 ?>
-<!--                <li>-->
-<!--                    <div class="service-img"><img src="img/front/new.gif" alt="icon" /></div>-->
-<!--                    <h3><a href="#">种植技术</a><span>(今日36)</span></h3>-->
-<!--                    <p>帖子:3862</p>-->
-<!--                </li>-->
-<!--                <li class="right-side">-->
-<!--                    <div class="service-img"><img src="img/front/old.gif" alt="icon" /></div>-->
-<!--                    <h3><a href="#">大棚环境</a><span>(今日36)</span></h3>-->
-<!--                    <p>帖子:3862</p>-->
-<!--                </li>-->
-<!--                <li>-->
-<!--                    <div class="service-img"><img src="img/front/lock.gif" alt="icon" /></div>-->
-<!--                    <h3><a href="#">疾病防治</a><span>(今日36)</span></h3>-->
-<!--                    <p>帖子:3862</p>-->
-<!--                </li>-->
-<!--                <li class="right-side">-->
-<!--                    <div class="service-img"><img src="img/front/new.gif" alt="icon" /></div>-->
-<!--                    <h3><a href="#">疑难问题</a><span>(今日36)</span></h3>-->
-<!--                    <p>帖子:3862</p>-->
-<!--                </li>-->
             </ul>
         </div>
     </div>
@@ -231,12 +215,13 @@ A;
     <div id="team" class="about">
         <div class="container">
             <h3 class="titles titles-white-c">农事杂谈</h3>
-            <p id="about-desc">Here are the three world famous farmer who are using our system. You can search their information online or contact with them with on our webpage.</p>
+            <p id="about-desc">清明下种，谷雨插秧，人误地一时，地误人一年，雨春风冻人，不冻水，今冬麦盖三层被，
+                来年枕着馒头睡，晚稻一过秋，十有九不收，白露早，寒露迟，秋分种麦正当时.</p>
             <ul>
                 <li>
                     <img src="img/about/a1.jpg" alt="staff" />
-                    <h3>Han Doe</h3>
-                    <h6>Guangxi Liuzhou</h6>
+                    <h3>韩二贵</h3>
+                    <h6>广西 柳州</h6>
                     <div class="social-staff">
                         <ul>
                             <li class="facebook"><a href="#"></a></li>
@@ -247,8 +232,8 @@ A;
                 </li>
                 <li>
                     <img src="img/about/a2.jpg" alt="staff" />
-                    <h3>Feng Chou</h3>
-                    <h6>Hunan Zhuzhou</h6>
+                    <h3>冯稠</h3>
+                    <h6>湖南 株洲</h6>
                     <div class="social-staff">
                         <ul>
                             <li class="facebook"><a href="#"></a></li>
@@ -259,8 +244,8 @@ A;
                 </li>
                 <li class="right-side">
                     <img src="img/about/a3.jpg" alt="staff" />
-                    <h3>QingFeng Liu</h3>
-                    <h6>Ningxia Wuwei</h6>
+                    <h3>刘庆峰</h3>
+                    <h6>宁夏 武威</h6>
                     <div class="social-staff">
                         <ul>
                             <li class="facebook"><a href="#"></a></li>
@@ -280,8 +265,11 @@ A;
         <div class="container">
             <h3 class="titles">联系方式</h3>
             <div class="contact-desc">
-                <h4>IA.com, Inc. (NASDAQ: INAG), a Fortune 500 company based in Shanghai,
-                    opened on the World Wide Web in July 2015 and today offers Earth’s Biggest Intelligence Agriculture.</h4>
+                <h4>“智慧农业系统”立足现代农业，融入国际领先的“物联网、移动互联网、云计算”技术，
+                    借助个人电脑、智能手机，实现对农业生产现场温度、湿度、土壤的实时监测，
+                    并对大棚、温室的灌溉、通风、降温、增温等农业设施实现远程自动化控制。<br>
+                    系统可帮助广大农业工作者随时随地掌握农作物生长状况及环境变化趋势，
+                    为用户提供一套高效便捷、功能强大的农业监控解决方案。</h4>
                 <p>4800 Caoan Highway, Jiading, Shanghai, China</p>
                 <p>+012 345 678 9</p>
                 <div class="social">
@@ -297,11 +285,11 @@ A;
             </div>
             <div class="contact-form-holder">
                 <form method="POST" id="contact-form" name="contact-form">
-                    <input type="text" name="name" class="fields" id="name" placeholder="Your Name..." />
-                    <input type="text" name="email" class="fields" id="email" placeholder="Your Email..."/>
-                    <input type="text" name="subject" class="fields" id="subject" placeholder="Email Subject..."/>
-                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message..."></textarea>
-                    <input type="submit" id="send-btn" name="send-btn" value="Send" />
+                    <input type="text" name="name" class="fields" id="name" placeholder="姓名..." />
+                    <input type="text" name="email" class="fields" id="email" placeholder="邮箱..."/>
+                    <input type="text" name="subject" class="fields" id="subject" placeholder="副邮箱..."/>
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="问题..."></textarea>
+                    <input type="submit" id="send-btn" name="send-btn" value="发送" />
                 </form>
                 <div class="success">
                     We'll answer you as soon as possible.

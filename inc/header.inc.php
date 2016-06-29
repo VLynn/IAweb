@@ -37,7 +37,7 @@ A;
 				else {
 $str = <<<A
 				<a href="login.php">登录</a>&nbsp;
-				<a>注册</a>
+				<a href="register.php">注册</a>
 A;
 				echo $str;
 				}

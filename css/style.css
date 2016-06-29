@@ -361,7 +361,7 @@ input:-ms-input-placeholder {
 	margin-bottom: 70px;
 }
 ul#filterOptions {
-	width: 56%;
+	width: 40%;
 	margin: 40px auto;
 	overflow: hidden;
 	margin-top: 90px;
@@ -449,6 +449,7 @@ ul#filterOptions li.active a { background: #ed0c4c;
 	color: #333;
 	margin-top: 30px;
 	text-align: center;
+	font-size: 18px;
 }
 .news .container ul {
 	margin: 0;
@@ -494,7 +495,7 @@ ul#filterOptions li.active a { background: #ed0c4c;
 	padding: 20px;
 }
 .about ul li img{
-	opacity: .4;
+	opacity: 100;
 	-webkit-transition-duration: 300ms;
 	-moz-transition-duration: 300ms;
 	-o-transition-duration: 300ms;
@@ -583,6 +584,7 @@ ul#filterOptions li.active a { background: #ed0c4c;
 	color: #333;
 	margin-bottom: 30px;
 	font-family: opensans_regular;
+	font-weight: 200;
 }
 .contact-desc p{
 	/*color: #eee;*/
