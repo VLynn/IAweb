@@ -33,6 +33,7 @@ $member_id=is_login($link);
             <div class="logo">[论坛]智慧农业</div>
             <div class="navi">
                 <a class="hover">首页</a>
+                <a class="hover" href="admin/login.php" target="_blank">管理</a>
             </div>
             <div class="serarch">
                 <form>

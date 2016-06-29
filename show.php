@@ -54,7 +54,7 @@ include 'inc/header.inc.php';
             <?php
             $query = "select count(*) from reply where post_id={$_GET['id']}";
             $count_reply = num($link, $query);
-            $page = page($count_reply, 9);
+            $page = page($count_reply, 7);
             echo $page['html'];
             ?>
         </div>
@@ -62,7 +62,7 @@ include 'inc/header.inc.php';
         <div style="clear:both;"></div>
     </div>
     <?php
-    if($_GET['page']==1) {
+    if($_GET['page']<=1) {
     ?>
     <div class="wrapContent">
         <div class="left">
@@ -82,7 +82,7 @@ include 'inc/header.inc.php';
         <div class="right">
             <div class="title">
                 <h2><?php echo $data_content['title'] ?></h2>
-                <span>阅读：<?php echo $data_content['times'] ?>&nbsp;|&nbsp;回复：15</span>
+                <span>阅读：<?php echo $data_content['times'] ?>&nbsp;|&nbsp;回复：<?php echo $count_reply?></span>
                 <div style="clear:both;"></div>
             </div>
             <div class="pubdate">
@@ -101,7 +101,6 @@ include 'inc/header.inc.php';
     <?php
     $query = "select member.username, member.photo, reply.date, reply.id, reply.content from member, reply where reply.post_id={$_GET['id']} and reply.member_id = member.id {$page['limit']}";
     $result_reply = query($link, $query);
-    $floor = 1;
     while($data_reply = mysqli_fetch_assoc($result_reply)) {
         $data_reply['content']=nl2br(htmlspecialchars($data_reply['content']));
         ?>
@@ -119,8 +118,12 @@ include 'inc/header.inc.php';
         <div class="right">
 
             <div class="pubdate">
+                <?php
+                $query="select count(*) from reply where post_id={$_GET['id']} and id<={$data_reply['id']}";
+                $floor=num($link,$query);
+                ?>
                 <span class="date">回复时间：<?php echo $data_reply['date']?></span>
-                <span class="floor"><?php echo $floor++?>楼&nbsp;|&nbsp;<a href="#">引用</a></span>
+                <span class="floor"><?php echo $floor?>楼&nbsp;|&nbsp;<a href="#">引用</a></span>
             </div>
             <div class="content">
                 <?php echo $data_reply['content']?>

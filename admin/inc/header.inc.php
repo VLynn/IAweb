@@ -18,7 +18,7 @@
     </ul>
     <div class="login_info">
         <a href="#" style="color:#fff;">网站首页</a>&nbsp;|&nbsp;
-        管理员： admin <a href="#">[注销]</a>
+        管理员： <?php echo $_COOKIE['manage_name']?> <a href="#">[注销]</a>
     </div>
 </div>
 <div id="sidebar">
