@@ -15,7 +15,7 @@ foreach ($info['css'] as $val) {
 <body>
 	<div class="header_wrap">
 		<div id="header" class="auto">
-			<div class="logo">IA智慧农业</div>
+			<div class="logo">智慧农业</div>
 			<div class="nav">
 				<a class="hover" href="index.php">首页</a>
 			</div>

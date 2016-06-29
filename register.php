@@ -44,6 +44,7 @@ if(isset($_POST['submit'])){
 }
 ?>
 <?php include 'inc/header.inc.php'?>
+    <div style="margin-top:55px;"></div>
 	<div id="register" class="auto">
 		<h2>欢迎注册成为 智慧农业论坛成员</h2>
 		<form method="post">

@@ -33,7 +33,7 @@ if(isset($_POST['submit'])) {
 //        header("refresh:0;url='login.php'");
 //    }
     $link = connect();
-    $query = "select * from member where username = '{$_POST['name']}' and password = '{$_POST['pw']}'";
+    $query = "select * from member where username = '{$_POST['name']}' and password = md5('{$_POST['pw']}')";
     $result = query($link, $query);
     if(mysqli_num_rows($result) == 1) {
         setcookie('name', $_POST['name'], time()+3600);
